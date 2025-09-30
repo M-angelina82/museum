@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Віртуальний музей - Відвідувачам</title>
+</head>
+<body>
+<header>
+  <h1>Віртуальний музей</h1>
+  <nav>
+    <a href="index.html">Головна</a> |
+    <a href="history.html">Історія</a> |
+    <a href="gallery.html">Галерея</a> |
+    <a href="visitors.html">Відвідувачам</a> |
+    <a href="contacts.html">Контакти</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Бронювання екскурсії</h2>
+  <form>
+    <fieldset>
+      <legend>Дані</legend>
+      <label>Ім’я: <input type="text" name="name"></label>
+      <label>Email: <input type="email" name="email"></label>
+      <label>Телефон: <input type="tel" name="phone"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Екскурсія</legend>
+      <label>Дата: <input type="date" name="date"></label>
+      <label>Час: <input type="time" name="time"></label>
+      <p>Тип:</p>
+      <label><input type="radio" name="type" value="group"> Групова</label>
+      <label><input type="radio" name="type" value="individual"> Індивідуальна</label>
+
+      <p>Опції:</p>
+      <label><input type="checkbox" name="audio"> Аудіогід</label>
+      <label><input type="checkbox" name="souvenir"> Сувеніри</label>
+
+      <p>Мова екскурсії:</p>
+      <select name="language">
+        <option>Українська</option>
+        <option>Англійська</option>
+        <option>Німецька</option>
+      </select>
+
+      <p>Коментар:</p>
+      <textarea name="comment" rows="4" cols="40"></textarea>
+    </fieldset>
+    <button type="submit">Забронювати</button>
+  </form>
+</main>
+<footer>
+  <p>2025 Віртуальний музей</p>
+</footer>
+</body>
+</html>
